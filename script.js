@@ -75,7 +75,7 @@ function playMusic(track,pause = false) {
 // if the current logic dosen't work use this and remove split from the addsong function in song.push line
 
 async function displayAlbum() {
-    let a = await fetch(`http://127.0.0.1:5500/Songs/`);
+    let a = await fetch(`/Songs/`);
     let responce = await a.text();
     let cardContainer = document.querySelector(".cardContainer");
 
@@ -87,7 +87,7 @@ async function displayAlbum() {
       
         if(e.href.includes("/Songs")) {
             let folder = e.href.split("/").slice(-1)[0];
-            let a = await fetch(`http://127.0.0.1:5500/Songs/${folder}/info.json`);
+            let a = await fetch(`/Songs/${folder}/info.json`);
             let responce = await a.json();
 
             //album load dynamically
