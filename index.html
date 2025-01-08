@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=library_music" />
+    <title>Spotify clone</title>
+</head>
+<body>
+    <nav class="navigation">
+        <i class="fa-brands fa-spotify" style="color: #000000;"></i>
+
+        <div class="action">            <!--This div combines the search bar icon and home and folder opne icon in one starts-->
+            <div class="home-circle">
+        <i class="fa-solid fa-house"></i></div>
+
+        <div class="box">       
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="searcbar" placeholder="Search"> </i><i class="fa-solid fa-folder-open"></i></i>
+        </div> <!--Box of search bar ends here-->
+
+        </div> <!--This div combines the search bar icon and home and folder opne icon in one ends-->
+
+    <div class="buttons">
+        <button class="signup">Sign up</button>
+        <button class="login">Login</button>
+    </div>
+    </nav> <!--Navigation ends here-->
+
+    <div class="container">
+        <div class="left">
+           
+            <div class="incon-text-container">
+            <span class="material-symbols-outlined icon" style="font-size: 35px; margin-left: 5px;">library_music
+            </span><span id="name">Your Libray</span>
+            <span><i class="fa-solid fa-plus add"></i></span>
+        </div>
+            
+            <div class="box-container"> <!--Box container starts here contains songlists and handles its width and height-->
+
+            <div class="songlist">
+                <ul>
+                  
+                </ul>
+            </div>
+
+            <!-- <div class="playlist">                             create playlist div
+                <h3 class="playlist-heading">Create your first Playlist</h3>
+                <p>It's easy we will help you</p>
+                <button class="create">Create Playlist</button>
+            </div>
+
+            <div class="podcast">                                   podcast div
+                <h3 class="podcast-heading">Let's find some podcast to follow</h3>
+                <p>We'll keep you updated on new episodes</p>
+                <button class="browse">Browse podcast</button>
+            </div> -->
+            
+        </div> <!--Box container ends here-->
+
+        <footer class="left-footer">
+            <a href="#" class="links">Legal</a>
+            <a href="#" class="links">Safety & Privacy Center</a>
+            <a href="#" class="links">Privacy Policy</a>
+            <a href="#" class="links">Cookies</a>
+            <a href="#" class="links">About Ads</a>
+            <a href="#" class="links">Accessibility</a>
+
+            <a href="#" style="display: block;" class="cooky">Cookies</a>
+
+            <button class="langauge-btn"><i class="fa-solid fa-globe"></i> English</button>
+        </footer>
+        </div> <!--Left container ends here-->
+
+
+        <div class="right">     <!--right container starts here-->
+
+            <div class="mobile-nav">        <!--Responsiveness of mobile nav starts here-->
+                <i id="hamburger" class="fa-solid fa-bars" style="color: #7e838b;"></i>
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </div>                          <!--Responsiveness of mobile nav ends here-->
+
+            <nav class="right-nav">
+                <div class="aeros">
+                    <div class="aero-circle"><i class="fa-solid fa-less-than" style="color: #000000;"></i></div>
+                    <div class="aero-circle"><i class="fa-solid fa-greater-than" style="color: #000000;"></i></div>
+                </div>
+                <div class="btn-profile">
+                    <button class="upgrade">Upgrade</button>
+                    <div class="profile-circle"><i class="fa-regular fa-user"></i></div>
+                </div>
+                
+            </nav>
+
+            <div class="playlist-name">
+            <h2 class= "popularartists" style="display: inline;">Popular Artists</h2>
+            <a href="#">Show all</a>
+            </div>
+            <div class="cardContainer">  <!--card container starts here-->
+              
+            </div> <!--Card container here-->
+           
+            </div> <!--Album container ends here-->
+        </div><!--Playbar div ends here-->
+
+            <div class="playbar">   <!--Playbar div start here-->
+            
+                <div class="songinfo">
+                    song name
+                </div>
+                <div class="playbar-control">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songbutton">
+                        <i id="previous" class="fa-solid fa-backward" style="color: #000000;"></i>
+                        <i id="play" class="fa-solid fa-play" style="color: #000000;"></i>
+                        <i id="next" class="fa-solid fa-forward" style="color: #000000;"></i>
+                    </div><!--Song button div ends here-->
+                </div>
+                
+                
+                    <div class="songtime">
+                        00:00 / 00:00
+                    </div>
+        
+                    <div class="volumeContainer">
+                        <i id="volume" class="fa-solid fa-volume-high" style="color: #000000;"></i>
+                        <input type="range" name="volume" class="range">
+                    </div>
+                
+          
+        </div><!--Right container ends here-->
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
