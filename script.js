@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+    let a = await fetch(`/${folder}/`);
     let responce = await a.text();
     // console.log(responce);
 
@@ -85,7 +85,7 @@ async function displayAlbum() {
     Array.from(anchors).forEach(async e => {
 
       
-        if(e.href.includes("/Songs")) {
+        if (e.href.includes("/songs") && !e.href.includes(".htaccess")){
             let folder = e.href.split("/").slice(-1)[0];
             let a = await fetch(`/Songs/${folder}/info.json`);
             let responce = await a.json();
